@@ -9,7 +9,10 @@ const sortByOptions = {
 function SearchBar() {
   
 	function SearchOptions() {
-		return <li>Search1</li>;
+		const sortByOptionsList = Object.entries(sortByOptions).map(([key, value]) => {
+			return <li key={value}>{key}</li>;
+		})
+		return sortByOptionsList;
 	}
 
 	return (
