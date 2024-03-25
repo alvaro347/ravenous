@@ -16,15 +16,15 @@ function SearchBar() {
 	}
 
 	return (
-		<div className="">
-			<div>
+		<div id="searchBar">
+			<div id="searchBar-text">
 				<p>Search Options.</p>
 				<ul>{SearchOptions()}</ul>
 			</div>
-			<div>
-				<input placeholder="Search Businesses" />
-				<input placeholder="Where?" />
-				<button type="button">Search</button>
+			<div id="searchBar-inputs">
+				<input placeholder="Search Businesses" className="search-input"/>
+				<input placeholder="Where?" className="search-input"/>
+				<button type="button" className="search-button">Search</button>
 			</div>
 		</div>
 	);

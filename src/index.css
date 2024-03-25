@@ -17,8 +17,20 @@ body {
 }
 
 #business-container {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   margin: 10px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#searchBar {
+  width: 100%;
+  color: white;
+  height: 280px;
+  padding: 20px;
+  background-image: url("./img/background_search_desktop.jpg");
+  text-align: center;
 }
 
 .business-card {
@@ -26,12 +38,35 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  /* display: flex; */
-  /* flex-direction: column; */
   margin: 10px;
   height: 400px; /* adjust height as needed */
   width: 300px; /* adjust width as needed */
-  
+}
+
+.business-card p {
+  margin: 5px;
+  font-size: 16px;
+  color: #666;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px;
+  margin: 10px;
 }
 
 .business-img {
@@ -45,8 +80,25 @@ body {
   margin: 0;
 }
 
-p {
-  margin: 5px;
-  font-size: 16px;
-  color: #666;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  color: black;
 }
+
+ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #e0e0e0;
+}
+
