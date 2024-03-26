@@ -1,14 +1,13 @@
 import React from "react";
 import Business from "./Business";
 
-function BusinessList() {
+function BusinessList(props) {
 	return (
 		<div id="business-container">
-			<Business />
-			<Business />
-			<Business />
-			<Business />
-			<Business />
+			{ props.businessArray.map(
+				(business, index) => { return <Business key={ index } business= { business } /> }
+				) 
+			}
 		</div>
 	);
 }
