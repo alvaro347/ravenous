@@ -39,15 +39,45 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin: 10px;
-  height: 400px; /* adjust height as needed */
-  width: 300px; /* adjust width as needed */
+  height: 380px; /* adjust height as needed */
+  width: 250px; /* adjust width as needed */
 }
 
-.business-card p {
-  margin: 5px;
-  font-size: 16px;
-  color: #666;
+.business-info h3 {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 1.3rem;
 }
+
+.business-info {
+  padding: 0 5%;
+}
+
+.business-text-grid div p {
+  margin: 2px 0;
+  font-size: 0.8rem;
+
+}
+
+.business-grid-2 {
+  text-align: right;
+  color:chocolate;
+}
+
+
+.business-text-grid {
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: 60% 40%;
+  gap: 0;
+}
+
+.business-category {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 
 .search-button {
   background-color: #007bff;
@@ -71,9 +101,11 @@ body {
 
 .business-img {
   width: 100%;
-  height: 200px;
+  height: 260px;
   object-fit: cover;
 }
+
+
 
 .business-title {
   font-size: 24px;
