@@ -1,13 +1,12 @@
-const yelpKey =
-  "";
+const yelpKey = "";
 const yelpBaseUrl = "https://api.yelp.com/v3";
 
 function YelpGet(term, location, sortBy) {
   const searchEndpoint = "/businesses/search";
   const corsOverride = 'https://cors-anywhere.herokuapp.com/';
-  const queryParams = `?location=${location}&term=${term}&sort_by=${sortBy}&limit=18`
+  const queryParams = `?location=${location}&term=${term}&sort_by=${sortBy}&limit=18`;
   const urlToFetch = (corsOverride + yelpBaseUrl + searchEndpoint + queryParams);
-  console.log(urlToFetch);
+
   return fetch(urlToFetch, {
     headers:{
       Authorization: `Bearer ${yelpKey}`

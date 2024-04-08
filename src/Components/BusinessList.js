@@ -1,10 +1,10 @@
 import React from "react";
 import Business from "./Business";
 
-function BusinessList(props) {
+function BusinessList({businessArray}) {
 	return (
 		<div id="business-container">
-			{ props.businessArray.map(
+			{ businessArray.map(
 				(business, index) => { return <Business key={ index } business= { business } /> }
 				) 
 			}
